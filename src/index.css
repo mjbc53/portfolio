@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,146 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
+
+
+/* Page colors stored in variables */
+:root{
+  --indigo-dye: rgba(5, 60, 94, 1);
+  
+  --space-cadet: rgba(53, 54, 82, 1);
+  --english-violet: rgba(76, 51, 77, 1);
+  --old-mauve: rgba(100, 48, 71, 1);
+  --catawba: rgba(124, 46, 65, 1);
+  
+  --upsdell-red: rgba(171, 40, 54, 1);
+  --madder-lake: rgba(195, 37, 48, 1);
+  --amaranth-red: rgba(219, 34, 42, 1);
+  
+  
+  
+  
+  --flickr-pink: rgba(247, 37, 133, 1);
+  --purple: rgba(114, 9, 183, 1);
+  --purple-2: rgba(86, 11, 173, 1);
+  --trypan-blue: rgba(72, 12, 168, 1);
+  --trypan-blue-2: rgba(58, 12, 163, 1);
+  --persian-blue: rgba(63, 55, 201, 1);
+  --ultramarine-blue: rgba(67, 97, 238, 1);
+  --vivid-sky-blue: rgba(76, 201, 240, 1);
+  
+  
+  --red-violet: rgba(148, 43, 59, 1);
+  
+  --byzantine: rgba(181, 23, 158, 1);
+  --dodger-blue: rgba(72, 149, 239, 1);
+  --prussian-blue: rgba(29, 57, 88, 1);
+  --transparent-prussian-blue:  rgba(29, 57, 88, .9);
+  --orange-yellow: rgba(255, 186,8,1);
+  --black: rgba(0,0,0,1);
+  }
+  
+  .black-text{
+    color: var(--black);
+  }
+  
+  .pink-text{
+    color: var(--byzantine);
+    text-shadow: var(--orange-yellow) 1px 1px 2px;
+  }
+  
+  .large-text{
+    font-size: 60px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  /* header background */
+  header{
+    background-image: url('./assets/images/banners/waranont-joe-T7qyLNPwgKA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom:  300px;
+  }
+  
+  .header-coloring{
+    background: var(--transparent-prussian-blue);
+    color: var(--byzantine);
+    text-shadow: var(--orange-yellow) 1px 1px 2px;
+  }
+  
+  .icon-size{
+    width: 96px;
+    height: 96px;
+  }
+  
+  footer{
+    background: var(--prussian-blue);
+  }
+  
+  
+  main{
+    background: var(--prussian-blue);
+  }
+  
+  .img-style{
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--vivid-sky-blue);
+  }
+  
+  .about-me-text{
+    border: 5px var(--vivid-sky-blue) solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--dodger-blue);
+  }
+  
+  
+  /*  contact me form styles*/
+  /* ct = contact */
+  
+  .ct-submit-btn{
+    align-self: center;
+    width: 25%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: var(--byzantine);
+    padding: 5px 30px 5px 30px;
+    border: var(--flickr-pink) 2px solid;
+    border-radius: 10px;
+    box-shadow: var(--flickr-pink) 3px 3px 0px;
+  }
+  
+  .ct-submit-btn:hover{
+    border: none;
+    box-shadow: none;
+  }
+  
+  .ct-label{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
