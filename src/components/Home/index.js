@@ -2,8 +2,7 @@ import React from "react";
 import About from '../About'
 import Portfolio from '../Portfolio'
 import ContactPage from "../Contact";
-// import Resume from '../Resume'
-
+import ResumePage from "../Resume";
 
 
 function Homepage(props) {
@@ -20,6 +19,9 @@ function Homepage(props) {
       break;
     case 'Contact Me':
       render = <ContactPage/>
+      break;
+    case 'Resume':
+      render = <ResumePage/>
       break;
     default:
     render = <About/>
