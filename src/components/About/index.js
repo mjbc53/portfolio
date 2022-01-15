@@ -3,14 +3,14 @@ import personalPhoto from '../../assets/images/about-me-image.jpg'
 
 function About(){
   return(
-    <section id="about" class="container pt-4">
-    <div class="row">
-      <h3 class="pink-text text-center large-text col-12">About me</h3>
+    <section id="about" className="container pt-4">
+    <div className="row">
+      <h3 className="pink-text text-center large-text col-12">About me</h3>
 
-      <div class="about-me-text text-center">
-        <img src={personalPhoto}  class="img-style mt-2"/>
+      <div className="about-me-text text-center">
+        <img src={personalPhoto}  alt='Mark Carriveau' className="img-style mt-2"/>
   
-        <p class="m-0 py-5 black-text fs-5">
+        <p className="m-0 py-5 black-text fs-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut 
           lectus pretium, rutrum ex a, gravida ipsum. Pellentesque ut mi in ipsum 
           porttitor egestas. Sed vel euismod quam, a placerat dolor. Phasellus
@@ -25,7 +25,7 @@ function About(){
           mollis sed or
             ci. Nam dignissim sed diam vitae interdum.
         </p>
-        <p class="m-0 pb-5 black-text fs-5">
+        <p className="m-0 pb-5 black-text fs-5">
           Nam egestas dui ipsum, eu tincidunt eros ma
           ttis a. Etiam a eros ac augue pellentesque cursus in vita
           e sem. Duis fringilla nunc turpis, id cursus lectus posuere non. P

@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import ContactPage from "./components/Contact";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Homepage from "./components/Home";
+
 
 
 function App() {
+
+  const navElements = [
+    {
+      name:'About Me'
+    },
+    {
+      name:'Portfolio'
+    },
+    {
+      name:'Contact Me'
+    },
+    {
+      name:'Resume'
+    }
+    ]
+  
+  const [currentNavElement, setCurrentNavElement] = useState(navElements[0])
+  
+
+
   return (
     <div className="App">
-      <Nav></Nav>
+      <Nav
+      navElements={navElements}
+      currentNavElement={currentNavElement}
+      setCurrentNavElement={setCurrentNavElement}
+      ></Nav>
       <main>
-        {/* <ContactPage></ContactPage> */}
-        {/* <About></About> */}
-        <Portfolio/>
+        <Homepage currentNavElement={currentNavElement}></Homepage>
       </main>
       <Footer></Footer>
     </div>
