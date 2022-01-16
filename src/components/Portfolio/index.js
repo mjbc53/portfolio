@@ -1,8 +1,9 @@
 import React from "react";
 
-
+// protfolio component
 function Portfolio(){
 
+  //set projects so they can be mapped over
   const projects = [
     {
       name: 'Capital Opulence',

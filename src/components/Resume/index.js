@@ -1,10 +1,12 @@
 import React from "react";
+//import resume pdf
 import Resume from '../../assets/resume.pdf'
 
 
-
+//resumepage portfolio
 function ResumePage(){
 
+  //frontend proficiencies to map over
   const frontEndPro = [
     'Html', 
     'CSS', 
@@ -15,6 +17,7 @@ function ResumePage(){
     'Responsive Design'
   ]
 
+  //backend proficiencies to map over
   const backEndPro = [
     'Express.js',
     'Node.js',

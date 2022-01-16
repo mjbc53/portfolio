@@ -1,7 +1,9 @@
 import React from "react";
+//import gihub and linkedin icons
 import githubIcon from '../../assets/images/icons/github.png'
 import linkedInIcon from '../../assets/images/icons/linkedin-logo.png'
 
+//footer component
 function Footer(){
   return (
     <footer className="d-flex justify-content-center py-4 flex-wrap">

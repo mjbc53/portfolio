@@ -1,15 +1,26 @@
 import React, { useState } from 'react'
-import { validateEmail, ValidateEmail } from '../../utils/helpers'
+//import email validator function from utils
+import { validateEmail } from '../../utils/helpers'
 
+//contact page component
 function ContactPage(){
 
+  //set state for form
   const [formState, setFormState] = useState({name:'', email: '', message: ""})
 
+  //set state for the error message
   const [errorMessage, setErrorMessage] = useState('')
 
+  //deconstruct formState
   const {name, email, message} = formState
 
+  //function that will handle changes when inputs are clicked off of
   function handleChange(evt){
+    //if evt target is email then check if the email matchs a regexr
+    //if it matches do nothing if it doesnt then let the use know with error
+    //message
+    //else check to make sure the message/name has a length if not send error message
+    //if no error message then it can be submitted
     if(evt.target.name === 'email'){
       const isValid = validateEmail(evt.target.value)
 
@@ -30,6 +41,7 @@ function ContactPage(){
     }
   }
 
+  //submit the contact form console.log it for not since there is no backend
   function handleSubmit(evt){
     evt.preventDefault()
     console.log(formState)

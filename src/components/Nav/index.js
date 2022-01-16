@@ -1,14 +1,12 @@
 import React from 'react'
 
 function Nav(props){
+  //decontrust the props
     const {
       navElements = [],
       setCurrentNavElement,
       currentNavElement
     } = props
-
-    
-
 
   return (
     <header className="h-50">
@@ -16,11 +14,10 @@ function Nav(props){
       <div className="container">
         <div className="row g-0">
 
-          <div className="col-4">
-            <h2 className="large-text">Mark Carriveau</h2>
-          </div>
+            <h2 className="fs-1 col-4">Mark Carriveau</h2>
+  
           
-          <ul className="col row align-items-center w-100">
+          <ul className="col row w-100">
             {navElements.map( (element) => (
                 <li 
                 className={`col ${currentNavElement === element.name && 'navActive'}`}
@@ -33,16 +30,6 @@ function Nav(props){
                 </span>
               </li>
             ))}
-          
-            {/* <li className="col">
-              <span><h3>Portfolio</h3></span>
-            </li>
-            <li className="col">
-              <span><h3>Contact</h3></span>
-            </li>
-            <li className="col">
-              <span><h3>Resume</h3></span>
-            </li> */}
           </ul>
   
         </div>

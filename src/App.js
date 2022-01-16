@@ -7,6 +7,7 @@ import Homepage from "./components/Home";
 
 function App() {
 
+  //set up nav elements
   const navElements = [
     {
       name:'About Me'
@@ -22,6 +23,7 @@ function App() {
     }
     ]
   
+    //set state for nav elements
   const [currentNavElement, setCurrentNavElement] = useState(navElements[0])
   
 
