@@ -18,16 +18,16 @@ function Portfolio(){
       cssClass: 'MandMImg'
     },
     {
+      name: 'Mantis Mocha',
+      deployedAt: 'https://mantismocha.herokuapp.com/',
+      githubRepo: 'https://github.com/Ahmed-Sajjad111/mantis-mocha',
+      cssClass: 'MantisMochaImg'
+    },
+    {
       name: 'The FullStack Block',
       deployedAt: 'https://the-fullstack-blog.herokuapp.com/',
       githubRepo: 'https://github.com/mjbc53/fullstack-blog',
       cssClass: 'FSBlogImg'
-    },
-    {
-      name: 'Weather DashBoard',
-      deployedAt: 'https://mjbc53.github.io/weather-dashboard/',
-      githubRepo: 'https://github.com/mjbc53/weather-dashboard',
-      cssClass: 'WeathDashImg'
     },
     {
       name: 'Daily Scheduler',
