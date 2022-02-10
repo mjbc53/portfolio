@@ -1,6 +1,5 @@
 import React from "react";
 //import resume pdf
-import Resume from '../../assets/resume.pdf'
 
 
 //resumepage portfolio
@@ -35,7 +34,7 @@ function ResumePage(){
 
         <h4 className="res-titles text-center">Resume</h4>  
         <span className="res-span pb-3">Download my Resume 
-         <a href={Resume} className='res-a' download> Download</a>
+         <a href className='res-a' download> Download</a>
         </span>
         
         <h4 className="res-titles">Front-end Proficiencies</h4>

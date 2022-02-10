@@ -1,44 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Homepage from "./components/Home";
+import { BrowserRouter as Router,  Routes , Route} from 'react-router-dom'
+import About from "./pages/About";
+import ContactPage from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import ResumePage from "./pages/Resume";
 
 
 
 function App() {
 
-  //set up nav elements
-  const navElements = [
-    {
-      name:'About Me'
-    },
-    {
-      name:'Portfolio'
-    },
-    {
-      name:'Contact Me'
-    },
-    {
-      name:'Resume'
-    }
-    ]
-  
-    //set state for nav elements
-  const [currentNavElement, setCurrentNavElement] = useState(navElements[0])
-  
-
-
   return (
     <div className="App">
-      <Nav
-      navElements={navElements}
-      currentNavElement={currentNavElement}
-      setCurrentNavElement={setCurrentNavElement}
-      ></Nav>
-      <main>
-        <Homepage currentNavElement={currentNavElement}></Homepage>
-      </main>
-      <Footer></Footer>
+      <Router>
+        <Nav/>
+        <main>
+          <Routes>
+            {/* <Route excat path="/" element={ <Homepage/>}/> */}
+            <Route excat path="/" element={ <About />}/>
+            <Route excat path="/portfolio" element={ <Portfolio/>} />
+            <Route excat path="/contactme" element={<ContactPage/>} />
+            <Route excat path="resume" element={<ResumePage/>} />
+          </Routes>
+        </main>
+        <Footer/>
+      </Router>
     </div>
   );
 }

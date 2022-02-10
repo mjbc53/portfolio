@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 //import email validator function from utils
-import { validateEmail } from '../../utils/helpers'
+import { validateEmail } from '../utils/helpers'
 
 //contact page component
 function ContactPage(){

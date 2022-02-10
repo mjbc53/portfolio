@@ -1,6 +1,6 @@
 import React from 'react'
 //import photo for about me
-import personalPhoto from '../../assets/images/about-me-image.jpg'
+import personalPhoto from '../assets/images/about-me-image.jpg'
 
 //about me component function
 function About(){
