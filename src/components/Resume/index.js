@@ -1,20 +1,18 @@
 import React from "react";
 //import resume pdf
-import Resume from '../../assets/resume.pdf'
 
 
 //resumepage portfolio
 function ResumePage(){
+  console.log(window.location.href)
 
   //frontend proficiencies to map over
   const frontEndPro = [
     'Html', 
-    'CSS', 
-    'Bootstrap', 
+    'CSS',  
     'JavaScript', 
     'React', 
-    'Page Design', 
-    'Responsive Design'
+    'Page Design/UI'
   ]
 
   //backend proficiencies to map over
@@ -35,13 +33,13 @@ function ResumePage(){
 
         <h4 className="res-titles text-center">Resume</h4>  
         <span className="res-span pb-3">Download my Resume 
-         <a href={Resume} className='res-a' download> Download</a>
+         <a className='res-a' download> Download</a>
         </span>
         
         <h4 className="res-titles">Front-end Proficiencies</h4>
         <ul className="res-ul">
         {frontEndPro.map( pro => (
-          <li className="res-li">
+          <li className="res-li" key={pro}>
             •{pro}
           </li>
         ))}
