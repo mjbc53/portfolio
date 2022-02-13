@@ -105,6 +105,10 @@ text-shadow: var(--orange-yellow) 1px 1px 2px;
   text-shadow: var(--vivid-sky-blue) 1px 1px 2px;
 }
 
+.nav-sticky{
+  position: sticky;
+  top: 0;
+}
 /* icon sizes */
 .icon-size-96px{
 width: 96px;
@@ -185,10 +189,21 @@ margin-bottom: 1%;
 
 /* portFolio stlyes */
 .port-a{
-  text-decoration: none;
   color: var(--byzantine);
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
+}
+
+.port-shadow{
+  box-shadow: 5px 5px 10px var(--dodger-blue);
+}
+.port-shadow:hover{
+  box-shadow: none;
+}
+
+.port-p{
+  color: white;
+  font-size: 1.25rem;
 }
 
 .port-a:hover{
@@ -293,5 +308,13 @@ text-align: center;
   .ct-submit-btn{
     width: 40%
 
+  }
+
+  .nav-name{
+    color: var(--byzantine);
+    text-shadow: var(--orange-yellow) 1px 1px 2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
   }
 }

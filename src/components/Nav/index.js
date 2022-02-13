@@ -16,7 +16,7 @@ function Nav(){
       <div className="container">
         <div className="row g-0 ">
 
-            <h2 className="fs-1 col-md-4 col-sm-12 nav-text">Mark Carriveau</h2>
+            <h2 className="fs-1 col-md-4 col-sm-12 nav-name">Mark Carriveau</h2>
   
           <ul className="col row w-100 ">
             

@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <Nav/>
+        <div className="background"></div>
         <main>
           <Routes>
             {/* <Route excat path="/" element={ <Homepage/>}/> */}
