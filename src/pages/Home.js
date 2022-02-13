@@ -1,7 +1,7 @@
 import React from 'react'
 import gif from '../assets/gifs/cyberpunk.gif'
 
-function LandingPage(){
+function Home(){
   return(
     <section id='landing' className='container pt-4'>
       <div className='row'>
@@ -21,4 +21,4 @@ function LandingPage(){
 }
 
 
-export default LandingPage
+export default Home

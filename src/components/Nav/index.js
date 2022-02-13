@@ -6,8 +6,8 @@ function Nav(){
   //set navbar elements to be mapped over
   const navBarElements = [
     {link:'/about', name: 'About Me'},
-    {link:'/portfolio', name: 'Portfolio'},
-    {link:'/contactme', name: 'Contact Me'},
+    {link:'/port', name: 'Portfolio'},
+    {link:'/contact', name: 'Contact Me'},
     {link:'/resume', name: 'Resume'},
   ]
 
