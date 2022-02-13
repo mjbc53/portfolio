@@ -25,6 +25,10 @@ color: var(--byzantine);
 text-shadow: var(--orange-yellow) 1px 1px 2px;
 }
 
+.white-text{
+  color: white;
+}
+
 .large-text{
 font-size: 60px;
 }

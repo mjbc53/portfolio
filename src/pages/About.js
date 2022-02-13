@@ -12,7 +12,7 @@ function About(){
       <div className="about-me-text text-center">
         <img src={personalPhoto}  alt='Mark Carriveau' className="img-style mt-2"/>
   
-        <p className="m-0 py-5 black-text fs-5">
+        <p className="m-0 py-5 white-text fs-5">
         Hey, how's it going I'm Mark Carriveau a current CNC Machinist, looking at getting into the 
         full stack web development field.
         I recently just finished a MERN Fullstack boot camp at the University of Minnesota.

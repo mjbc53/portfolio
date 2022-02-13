@@ -8,7 +8,7 @@ function LandingPage(){
         <h3 className='pink-text text-center large-text col-12'>Welcome!</h3>
       
         <div className='text-center land-text'>
-          <p className='m-0 py-5 black-text fs-5'>
+          <p className='m-0 py-5 white-text fs-5'>
             Welcome to my personal portfolio and Thank you for visiting!<br/>
             If you have any questions for me on the page or myself please shoot
             me an email in the contact me section of the page.
