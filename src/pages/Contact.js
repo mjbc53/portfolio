@@ -46,17 +46,24 @@ function ContactPage(){
   //submit the contact form console.log it for not since there is no backend
   function handleSubmit(evt){
     evt.preventDefault()
+    //deconstruct from state variables
     const {name, email, message} = formState
+    //create template for emailjs
     const templateParams = {
       from_name: name + " " + email,
       to_name: 'mjbc53@gmail.com',
       message: message
     }
 
+    //if there is missing data in the state then send a message and jump out of function
     if(name === '' && email === '' && message === ''){
       return setErrorMessage('Please enter all of the fields before submitting')
     }
 
+    //emailjs function call
+    //send ids and template to emailjs
+    //then get the response from emailjs and return a message
+    //if there is an error then return a message
     emailjs
       .send("service_e0r2ba8", "template_z78g1mg", templateParams, "user_BnWxJEHRo23hAp3V9urqU")
       .then((res) => {

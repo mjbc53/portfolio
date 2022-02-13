@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Nav(){
 
+  //set navbar elements to be mapped over
   const navBarElements = [
     {link:'/', name: 'About Me'},
     {link:'/portfolio', name: 'Portfolio'},

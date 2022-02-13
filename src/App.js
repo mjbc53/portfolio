@@ -19,7 +19,6 @@ function App() {
         <div className="background"></div>
         <main>
           <Routes>
-            {/* <Route excat path="/" element={ <Homepage/>}/> */}
             <Route excat path="/" element={ <About/>}/>
             <Route excat path="/portfolio" element={ <Portfolio/>} />
             <Route excat path="/contactme" element={<ContactPage/>} />

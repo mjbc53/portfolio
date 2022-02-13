@@ -4,10 +4,6 @@ import React from "react";
 
 //resumepage portfolio
 function ResumePage(){
-  const pageUrl = window.location.href
-  const hrefUrl = pageUrl.split('/').pop()
-  console.log(pageUrl, hrefUrl)
-
   //frontend proficiencies to map over
   const frontEndPro = [
     'Html', 

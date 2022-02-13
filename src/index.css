@@ -184,9 +184,6 @@ margin-bottom: 1%;
 }
 
 
-
-
-
 /* portFolio stlyes */
 .port-a{
   color: var(--byzantine);
@@ -209,6 +206,7 @@ margin-bottom: 1%;
 .port-a:hover{
 color: var(--orange-yellow);
 }
+
 
 /* capital opulence background img */
 .capOpBGImg{
@@ -304,6 +302,7 @@ font-weight: 500;
 text-align: center;
 }
 
+/* media query for smaller screens */
 @media screen and (max-width: 1000px){
   .ct-submit-btn{
     width: 40%

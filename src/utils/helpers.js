@@ -4,6 +4,7 @@ export function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
+//function that captializes the first letter of a string
 export function captializeFirstLetter(word){
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
