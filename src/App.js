@@ -6,6 +6,7 @@ import About from "./pages/About";
 import ContactPage from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import ResumePage from "./pages/Resume";
+import LandingPage from "./pages/LandingPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,11 +17,11 @@ function App() {
     <div className="App">
       <Router>
         <Nav/>
-        <div className="background"></div>
         <main>
           <Routes>
-            <Route excat path="/" element={ <About/>}/>
-            <Route excat path="/portfolio" element={ <Portfolio/>} />
+            <Route excat path="/" element={<LandingPage/>}/>
+            <Route excat path="/about" element={<About/>}/>
+            <Route excat path="/portfolio" element={<Portfolio/>} />
             <Route excat path="/contactme" element={<ContactPage/>} />
             <Route excat path="resume" element={<ResumePage/>} />
           </Routes>

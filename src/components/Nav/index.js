@@ -5,7 +5,7 @@ function Nav(){
 
   //set navbar elements to be mapped over
   const navBarElements = [
-    {link:'/', name: 'About Me'},
+    {link:'/about', name: 'About Me'},
     {link:'/portfolio', name: 'Portfolio'},
     {link:'/contactme', name: 'Contact Me'},
     {link:'/resume', name: 'Resume'},
@@ -17,7 +17,9 @@ function Nav(){
       <div className="container">
         <div className="row g-0 ">
 
-            <h2 className="fs-1 col-md-4 col-sm-12 nav-name">Mark Carriveau</h2>
+            <Link to='/' className='col-md-4 col-sm-12' style={{textDecoration: 'none'}}>
+            <h2 className="fs-1 nav-text">Mark Carriveau</h2>
+            </Link>
   
           <ul className="col row w-100 ">
             
