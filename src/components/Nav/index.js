@@ -1,12 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-function Nav(props){
-  //decontrust the props
-    const {
-      navElements = [],
-      setCurrentNavElement,
-      currentNavElement
-    } = props
+function Nav(){
+
+  const navBarElements = [
+    'About Me',
+    'Portfolio',
+    'Contact Me',
+    'Resume'
+  ]
 
   return (
     <header className="h-50">
@@ -16,20 +18,17 @@ function Nav(props){
 
             <h2 className="fs-1 col-4">Mark Carriveau</h2>
   
-          
           <ul className="col row w-100">
-            {navElements.map( (element) => (
-                <li 
-                className={`col ${currentNavElement === element.name && 'navActive'}`}
-                key={element.name}
-                >
-                <span onClick={() => {
-                  setCurrentNavElement(element)
-                }}>
-                  <h3>{element.name}</h3>
-                </span>
+            
+          {
+            navBarElements.map(element => (
+              <li className='col' key={element}>
+                <Link to='/' style={{textDecoration: 'none'}}>
+                  <h3 className='nav-text'>{element}</h3>
+                </Link>
               </li>
-            ))}
+            ))
+          }
           </ul>
   
         </div>

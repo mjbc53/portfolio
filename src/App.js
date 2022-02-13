@@ -6,6 +6,7 @@ import About from "./pages/About";
 import ContactPage from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import ResumePage from "./pages/Resume";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

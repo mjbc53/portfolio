@@ -8,7 +8,12 @@
   --orange-yellow: rgba(255, 186,8,1);
   --black: rgba(0,0,0,1);
   --flickr-pink: rgba(235,0,150,1)
-  }
+}
+
+/* page fonts */
+.App{
+  font-family: 'Lato', sans-serif;
+}
   
 /* general use styles */
 .black-text{
@@ -23,8 +28,6 @@ text-shadow: var(--orange-yellow) 1px 1px 2px;
 .large-text{
 font-size: 60px;
 }
-
-
 
 .hide{
   display: none ;
@@ -64,10 +67,7 @@ main{
 background: var(--prussian-blue);
 }
 
-a{
-  text-decoration: none;
-  color: var(--black);
-  }
+
 
 
 /* header background */
@@ -85,6 +85,15 @@ color: var(--byzantine);
 text-shadow: var(--orange-yellow) 1px 1px 2px;
 }
 
+.nav-text{
+  color: var(--byzantine);
+  text-shadow: var(--orange-yellow) 1px 1px 2px;
+  font-weight: bold;
+}
+
+.nav-text:hover{
+  text-shadow: var(--vivid-sky-blue) 1px 1px 2px;
+}
 
 /* icon sizes */
 .icon-size-96px{
