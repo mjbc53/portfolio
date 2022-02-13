@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 function Nav(){
 
   const navBarElements = [
-    'About Me',
-    'Portfolio',
-    'Contact Me',
-    'Resume'
+    {link:'/', name: 'About Me'},
+    {link:'/portfolio', name: 'Portfolio'},
+    {link:'/contactme', name: 'Contact Me'},
+    {link:'/resume', name: 'Resume'},
   ]
 
   return (
@@ -23,8 +23,8 @@ function Nav(){
           {
             navBarElements.map(element => (
               <li className='col' key={element}>
-                <Link to='/' style={{textDecoration: 'none'}}>
-                  <h3 className='nav-text'>{element}</h3>
+                <Link to={element.link} style={{textDecoration: 'none'}}>
+                  <h3 className='nav-text'>{element.name}</h3>
                 </Link>
               </li>
             ))
