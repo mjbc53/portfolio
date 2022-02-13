@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b4fd0e67.css",
-    "main.js": "/portfolio/static/js/main.f3bbe42a.js",
+    "main.css": "/portfolio/static/css/main.e0432674.css",
+    "main.js": "/portfolio/static/js/main.37bc68b9.js",
     "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
     "static/media/waranont-joe-T7qyLNPwgKA-unsplash.jpg": "/portfolio/static/media/waranont-joe-T7qyLNPwgKA-unsplash.d1fbd8c1c8e4976cc44d.jpg",
+    "static/media/cyberpunk.gif": "/portfolio/static/media/cyberpunk.2cf552c3ac555494354c.gif",
     "static/media/mantis_mocha.png": "/portfolio/static/media/mantis_mocha.a417fdd410b99e024dbc.png",
     "static/media/about-me-image.jpg": "/portfolio/static/media/about-me-image.8e69ca8f7b75e45455ee.jpg",
     "static/media/movies-and-munchies.jpg": "/portfolio/static/media/movies-and-munchies.15f3cd3793d353e0c4ea.jpg",
@@ -12,12 +13,12 @@
     "static/media/the-fullstack-blog.jpg": "/portfolio/static/media/the-fullstack-blog.b0ea3626250620ba13f2.jpg",
     "static/media/github.png": "/portfolio/static/media/github.05f6c17b8cd04c28456f.png",
     "index.html": "/portfolio/index.html",
-    "main.b4fd0e67.css.map": "/portfolio/static/css/main.b4fd0e67.css.map",
-    "main.f3bbe42a.js.map": "/portfolio/static/js/main.f3bbe42a.js.map",
+    "main.e0432674.css.map": "/portfolio/static/css/main.e0432674.css.map",
+    "main.37bc68b9.js.map": "/portfolio/static/js/main.37bc68b9.js.map",
     "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4fd0e67.css",
-    "static/js/main.f3bbe42a.js"
+    "static/css/main.e0432674.css",
+    "static/js/main.37bc68b9.js"
   ]
 }
