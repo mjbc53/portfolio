@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-<img src="./page.gif" width='50%' hieght='50%'>
+<img src="./src/assets/gifs/page.gif" width='50%' hieght='50%'>
 
 ## Description
 This is my SPA personal portfolio built with react and bootstrap. This page is
