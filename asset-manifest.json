@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.614bf950.css",
-    "main.js": "/static/js/main.4c2cb81e.js",
-    "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
-    "static/media/waranont-joe-T7qyLNPwgKA-unsplash.jpg": "/static/media/waranont-joe-T7qyLNPwgKA-unsplash.d1fbd8c1c8e4976cc44d.jpg",
-    "static/media/cyberpunk.gif": "/static/media/cyberpunk.2cf552c3ac555494354c.gif",
-    "static/media/mantis_mocha.png": "/static/media/mantis_mocha.a417fdd410b99e024dbc.png",
-    "static/media/about-me-image.jpg": "/static/media/about-me-image.8e69ca8f7b75e45455ee.jpg",
-    "static/media/movies-and-munchies.jpg": "/static/media/movies-and-munchies.15f3cd3793d353e0c4ea.jpg",
-    "static/media/capital-opulence.jpg": "/static/media/capital-opulence.003032fb1aa2e6ad8db7.jpg",
-    "static/media/daily-scheduler.jpg": "/static/media/daily-scheduler.ab4ec2d8253fcd19f976.jpg",
-    "static/media/the-fullstack-blog.jpg": "/static/media/the-fullstack-blog.b0ea3626250620ba13f2.jpg",
-    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
-    "index.html": "/index.html",
-    "main.614bf950.css.map": "/static/css/main.614bf950.css.map",
-    "main.4c2cb81e.js.map": "/static/js/main.4c2cb81e.js.map",
-    "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.76bf7786.css",
+    "main.js": "/portfolio/static/js/main.986f2502.js",
+    "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
+    "static/media/waranont-joe-T7qyLNPwgKA-unsplash.jpg": "/portfolio/static/media/waranont-joe-T7qyLNPwgKA-unsplash.d1fbd8c1c8e4976cc44d.jpg",
+    "static/media/cyberpunk.gif": "/portfolio/static/media/cyberpunk.2cf552c3ac555494354c.gif",
+    "static/media/mantis_mocha.png": "/portfolio/static/media/mantis_mocha.a417fdd410b99e024dbc.png",
+    "static/media/about-me-image.jpg": "/portfolio/static/media/about-me-image.8e69ca8f7b75e45455ee.jpg",
+    "static/media/movies-and-munchies.jpg": "/portfolio/static/media/movies-and-munchies.15f3cd3793d353e0c4ea.jpg",
+    "static/media/capital-opulence.jpg": "/portfolio/static/media/capital-opulence.003032fb1aa2e6ad8db7.jpg",
+    "static/media/daily-scheduler.jpg": "/portfolio/static/media/daily-scheduler.ab4ec2d8253fcd19f976.jpg",
+    "static/media/the-fullstack-blog.jpg": "/portfolio/static/media/the-fullstack-blog.b0ea3626250620ba13f2.jpg",
+    "static/media/github.png": "/portfolio/static/media/github.05f6c17b8cd04c28456f.png",
+    "index.html": "/portfolio/index.html",
+    "main.76bf7786.css.map": "/portfolio/static/css/main.76bf7786.css.map",
+    "main.986f2502.js.map": "/portfolio/static/js/main.986f2502.js.map",
+    "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.614bf950.css",
-    "static/js/main.4c2cb81e.js"
+    "static/css/main.76bf7786.css",
+    "static/js/main.986f2502.js"
   ]
 }
