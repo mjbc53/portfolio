@@ -4,7 +4,9 @@ import React from "react";
 
 //resumepage portfolio
 function ResumePage(){
-  console.log(window.location.href)
+  const pageUrl = window.location.href
+  const hrefUrl = pageUrl.split('/').pop()
+  console.log(pageUrl, hrefUrl)
 
   //frontend proficiencies to map over
   const frontEndPro = [
@@ -32,8 +34,9 @@ function ResumePage(){
         <h3 className="pink-text text-center large-text col-12">Resume</h3>
 
         <h4 className="res-titles text-center">Resume</h4>  
-        <span className="res-span pb-3">Download my Resume 
-         <a href className='res-a' download> Download</a>
+        <span className="res-span pb-3">Download my Resume
+         <a href="https://docs.google.com/document/d/1_HcVQbeesOlb_-HAM-Qs2pqd96W5RHWgSO4hjZdCn9M/export?format=pdf" 
+         className='res-a' download>Download</a>
         </span>
         
         <h4 className="res-titles">Front-end Proficiencies</h4>
@@ -50,7 +53,7 @@ function ResumePage(){
 
         <ul className="res-ul">
         {backEndPro.map( pro => (
-          <li className="res-li">
+          <li className="res-li" key={pro}>
             •{pro}
           </li>
         ))}

@@ -22,7 +22,7 @@ function Nav(){
             
           {
             navBarElements.map(element => (
-              <li className='col' key={element}>
+              <li className='col' key={element.name}>
                 <Link to={element.link} style={{textDecoration: 'none'}}>
                   <h3 className='nav-text'>{element.name}</h3>
                 </Link>

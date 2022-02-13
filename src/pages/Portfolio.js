@@ -18,16 +18,16 @@ function Portfolio(){
       cssClass: 'MandMImg'
     },
     {
+      name: 'Mantis Mocha',
+      deployedAt: 'https://mantismocha.herokuapp.com/',
+      githubRepo: 'https://github.com/Ahmed-Sajjad111/mantis-mocha',
+      cssClass: 'MantisMochaImg'
+    },
+    {
       name: 'The FullStack Block',
       deployedAt: 'https://the-fullstack-blog.herokuapp.com/',
       githubRepo: 'https://github.com/mjbc53/fullstack-blog',
       cssClass: 'FSBlogImg'
-    },
-    {
-      name: 'Weather DashBoard',
-      deployedAt: 'https://mjbc53.github.io/weather-dashboard/',
-      githubRepo: 'https://github.com/mjbc53/weather-dashboard',
-      cssClass: 'WeathDashImg'
     },
     {
       name: 'Daily Scheduler',
@@ -43,8 +43,8 @@ function Portfolio(){
       {projects.map ( project => (
          <div className={`${project.cssClass} col-5 mt-3  d-flex justify-content-center align-items-center `} key={project.name}>
          <div className="row">
-         <a href={project.deployedAt} target='_blank' rel="noreferrer" className="port-a hide">{project.name}</a>
-         <a href={project.githubRepo} target='_blank' rel="noreferrer" className="port-a hide">GitHub</a>
+         <a href={project.deployedAt} target='_blank' rel="noreferrer" className="port-a hide text-center mb-3">{project.name}</a>
+         <a href={project.githubRepo} target='_blank' rel="noreferrer" className="port-a hide text-center">GitHub</a>
          </div>
        </div>
       ))}
