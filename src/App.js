@@ -7,7 +7,6 @@ import ContactPage from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import ResumePage from "./pages/Resume";
 import Home from "./pages/Home.js";
-import NoMatch from "./pages/NoMatch";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,12 +19,11 @@ function App() {
         <Nav/>
         <main>
           <Routes>
-            <Route excat path="/" element={<Home/>}/>
-            <Route excat path="/about" element={<About/>}/>
-            <Route excat path="/port" element={<Portfolio/>} />
-            <Route excat path="/contact" element={<ContactPage/>} />
-            <Route excat path="resume" element={<ResumePage/>} />
-            <Route path="*" element={<NoMatch/>}/>
+              <Route excat path="/portfolio" element={<Home/>}/>
+              <Route excat path="/about" element={<About/>}/>
+              <Route excat path="/port" element={<Portfolio/>} />
+              <Route excat path="/contact" element={<ContactPage/>} />
+              <Route excat path="resume" element={<ResumePage/>} />
           </Routes>
         </main>
         <Footer/>

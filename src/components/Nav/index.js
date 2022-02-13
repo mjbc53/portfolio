@@ -17,7 +17,7 @@ function Nav(){
       <div className="container">
         <div className="row g-0 ">
 
-            <Link to='/' className='col-md-4 col-sm-12' style={{textDecoration: 'none'}}>
+            <Link to='/portfolio' className='col-md-4 col-sm-12' style={{textDecoration: 'none'}}>
             <h2 className="fs-1 nav-text">Mark Carriveau</h2>
             </Link>
   
