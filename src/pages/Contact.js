@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 //import email validator function from utils
-import { validateEmail } from '../utils/helpers'
+import { validateEmail, captializeFirstLetter } from '../utils/helpers'
+import emailjs from '@emailjs/browser'
 
 //contact page component
 function ContactPage(){
@@ -28,10 +29,11 @@ function ContactPage(){
         setErrorMessage('Your Email is Invalid')
       }else {
         setErrorMessage('')
+        setFormState({...formState, email: evt.target.value})
       }
     } else{
       if(!evt.target.value.length){
-        setErrorMessage(`${evt.target.name} is Required`)
+        setErrorMessage(`${captializeFirstLetter(evt.target.name)} is Required`)
       }else{
         setErrorMessage('')
       }
@@ -44,31 +46,72 @@ function ContactPage(){
   //submit the contact form console.log it for not since there is no backend
   function handleSubmit(evt){
     evt.preventDefault()
-    console.log(formState)
+    const {name, email, message} = formState
+    const templateParams = {
+      from_name: name + " " + email,
+      to_name: 'mjbc53@gmail.com',
+      message: message
+    }
+
+    if(name === '' && email === '' && message === ''){
+      return setErrorMessage('Please enter all of the fields before submitting')
+    }
+
+    emailjs
+      .send("service_e0r2ba8", "template_z78g1mg", templateParams, "user_BnWxJEHRo23hAp3V9urqU")
+      .then((res) => {
+        console.log('SUCCESS!', res.status, res.text)
+        setErrorMessage('Success the email has been sent! Thank you for your time!')
+      }, (err) => {
+        console.log('FAILed...', err)
+      })
   }
 
   return (
     <section id="contact-me" className="container pt-4">
     <div className="row justify-content-center">
      
-      <form className="d-flex black-text flex-column w-50" onSubmit={handleSubmit}>
+      <form 
+      action='mailto:mjbc53@gmail.com'
+      method='POST'
+      encType='multipart/form-data'
+      name='EmailForm'
+      className="d-flex black-text flex-column w-50" onSubmit={handleSubmit}>
         <div className="d-flex flex-column">
           <label htmlFor="name" className="ct-label">Name:</label>
-          <input type="text" name='name' onBlur={handleChange} defaultValue={email}/>          
+          <input
+          placeholder='James Bond'
+          className="ct-input" 
+          type="text" 
+          name='name' 
+          onBlur={handleChange} 
+          defaultValue={name}/>          
        
           <label htmlFor="email" className="ct-label">Email address:</label>
-          <input type="email" name='email' onBlur={handleChange} defaultValue={name}/>          
+          <input
+          placeholder='example@example.com'
+          className="ct-input" 
+          type="email" 
+          name='email' 
+          onBlur={handleChange} 
+          defaultValue={email}/>          
       
           <label htmlFor="message" className="ct-label">Message:</label>
-          <textarea name='message' rows='5' onBlur={handleChange} defaultValue={message}></textarea>       
+          <textarea
+          placeholder='Hello how are you?....'
+          className="ct-input" 
+          name='message' 
+          rows='5' 
+          onBlur={handleChange} 
+          defaultValue={message}></textarea>       
         </div>
         {errorMessage && (
           <div>
-            <p className='error-msg-contact-form'>{errorMessage}</p>
+            <p className='error-msg-contact-form mt-3'>{errorMessage}</p>
           </div>
         )}
         
-        <button type='submit' className="ct-submit-btn">Submit</button>
+        <button type='submit' value="Submit"className="ct-submit-btn">Submit</button>
       </form>
     </div>      
   </section>
