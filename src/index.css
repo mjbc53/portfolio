@@ -37,6 +37,7 @@ font-size: 60px;
   display: none ;
 }
 
+
 /* html elements styling*/
 ul{
 list-style-type: none;
@@ -118,6 +119,22 @@ text-shadow: var(--orange-yellow) 1px 1px 2px;
 .icon-size{
 width: 96px;
 height: 96px;
+}
+
+/* arrow bar styling */
+/* ab = arrow bar */
+.arrow-size{
+  height: 48px;
+  width: 48px;
+}
+
+.ab-msg-text{
+  display: none;
+  color: var(--orange-yellow);
+}
+
+.ab-show-text:hover .ab-msg-text{
+  display: block;
 }
 
 /* landing page stlyes  */
@@ -331,4 +348,21 @@ text-align: center;
     justify-content: center;
   }
 
+  
+.arrow-size{
+  height: 32px;
+  width: 32px;
+}
+
+.ab-msg-text{
+  display: block;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  .arrow-size{
+    height: 16px;
+    width: 16px;
+  }
 }

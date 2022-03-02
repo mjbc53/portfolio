@@ -1,5 +1,5 @@
 import React from "react";
-//import resume pdf
+import ArrowBar from '../components/ArrowBar'
 
 
 //resumepage portfolio
@@ -25,7 +25,8 @@ function ResumePage(){
   ]
 
   return (
-    <section id="resume" className="container">
+    <section id="resume" className="container pt-4">
+      <ArrowBar page='resume'/>
       <div className="row">
         <h3 className="pink-text text-center large-text col-12">Resume</h3>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowBar from '../components/ArrowBar'
 
 // protfolio component
 function Portfolio(){
@@ -43,6 +44,7 @@ function Portfolio(){
   ]
   return(
     <section id="portfolio" alt='project' className="container pt-4">
+    <ArrowBar page='portfolio'/>
     <div className="row justify-content-center ">
       <h3 className="pink-text text-center large-text col-12">Portfolio</h3>
       {projects.map ( project => (

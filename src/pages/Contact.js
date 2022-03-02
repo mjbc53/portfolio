@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 //import email validator function from utils
 import { validateEmail, captializeFirstLetter } from '../utils/helpers'
 import emailjs from '@emailjs/browser'
+import ArrowBar from '../components/ArrowBar'
 
 //contact page component
 function ContactPage(){
@@ -75,7 +76,8 @@ function ContactPage(){
   }
 
   return (
-    <section id="contact-me" className="container pt-4">
+  <section id="contact-me" className="container pt-4">
+      <ArrowBar page='contact'/>
     <div className="row justify-content-center">
      
       <form 
