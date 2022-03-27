@@ -15,13 +15,20 @@ function About(){
           <img src={personalPhoto}  alt='Mark Carriveau' className="img-style mt-2"/>
     
           <p className="m-0 py-5 white-text fs-5">
-          Hey, how's it going I'm Mark Carriveau a current CNC Machinist, looking at getting into the 
-          full stack web development field.
-          I recently just finished a MERN Fullstack boot camp at the University of Minnesota.
-          Now its time to see where life takes me.
-          A couple things about me, 
-          I have a love for anything cars, mechanical/logical and good music.
-          I love to learn and am known as someone who can catch on pretty quick.
+            Hey how's it going I'm Mark Carriveau. 
+            <br/>
+            • a Current CNC machinist and Front-End Developer/Aspiring Full-Stack Developer, know as a fast learner, 
+            clever, organized and exceptional at problem solving.
+            <br/>
+            • I am a very passionate, hardworking person who takes pride in my work and I am always trying to further my 
+            knowledge in any field/hobby I undertake .
+            <br/>
+            • I have past experience working in a team setting, and leading a team from my experience in FLL(First Lego 
+            League). 
+            <br/>
+            • I gained the fundamental skill of how to problem solve, stay organized and learn at a fast pace when I 
+            attended college for CNC machining when I was just 16.
+            <br/>
           </p>
         </div>
       </div>    
