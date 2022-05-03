@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { validateEmail, captializeFirstLetter } from '../utils/helpers'
 import emailjs from '@emailjs/browser'
 import ArrowBar from '../components/ArrowBar'
+import ContactInfo from '../components/ContactInfo/ContactInfo'
 
 //contact page component
 function ContactPage(){
@@ -79,7 +80,11 @@ function ContactPage(){
   <section id="contact-me" className="container pt-4">
       <ArrowBar page='contact'/>
     <div className="row justify-content-center">
-     
+
+      <div className='d-flex flex-column align-items-center'>
+        <h3 className='yellow-text'>Email Me</h3>
+        <ContactInfo/>
+      </div>
       <form 
       action='mailto:mjbc53@gmail.com'
       method='POST'
